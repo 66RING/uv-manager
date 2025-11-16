@@ -94,3 +94,8 @@ uvworkon() {
     source "$activate_script"
 }
 
+uvon() {
+  uvworkon "$@"
+}
+
+
