@@ -26,7 +26,7 @@ uvmk() {
         return 1
     fi
 
-    uv venv -c "$env_path" "$@"
+    uv venv --relocatable "$env_path" "$@"
     
     if [ $? -eq 0 ]; then
         echo "'$env_name' created at $env_path"
